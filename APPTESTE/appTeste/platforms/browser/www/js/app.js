@@ -6,4 +6,20 @@ $('.collection').on('click', '.collection-item', function(){
 	}
 
 	$badge.text(parseInt($badge.text()) + 1);
+
+	var nomeProduto = this.firstChild.textContent;
+	Materialize.toast(nomeProduto + 'adicionado' , 1000);
+});
+
+$('.modal-trigger').leanModal();
+
+$('#confirmar').on('click', function(){
+	var texto = "";
+
+	$(".badge").parent().each(function(){
+		texto += this.firstChild.textContent + ': ';
+		texto += this.lastChild.textContent + ', ';
+	});
+
+	$('#resumo').empty().text(texto);
 });

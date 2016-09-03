@@ -12,14 +12,3 @@ $('.collection').on('click', '.collection-item', function(){
 });
 
 $('.modal-trigger').leanModal();
-
-$('#confirmar').on('click', function(){
-	var texto = "";
-
-	$(".badge").parent().each(function(){
-		texto += this.firstChild.textContent + ': ';
-		texto += this.lastChild.textContent + ', ';
-	});
-
-	$('#resumo').empty().text(texto);
-});

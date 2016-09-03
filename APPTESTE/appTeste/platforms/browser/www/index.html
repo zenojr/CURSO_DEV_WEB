@@ -50,9 +50,21 @@
             <a class="collection-item waves-effect">Suco de Morango</a>
             <a class="collection-item waves-effect">Suco de Laranja</a>
         </div>
-        
+    </div>
+    <div class="fixed-action-btn">
+        <a href="#confirmacao" id="confirmar" class="btn-floating btn-large waves-effect waves-light red modal-trigger"><i class="material-icons">done</i></a>
+    </div>
 
-
+    <div id="confirmacao" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h5>Resumo do Pedido</h5>
+            <input type="number" id="numero-mesa" class="validate" placeholder="Numero da mesa">
+            <blockquote id="resumo"></blockquote>
+        </div>
+        <div class="modal-footer">
+            <button class="btn deep-orange waves-effect waves-light modal-close">Pedir</button>
+            <button class="btn-flat waves-effect waves-red modal-close">Cancel</button>
+        </div>
     </div>
 
 
