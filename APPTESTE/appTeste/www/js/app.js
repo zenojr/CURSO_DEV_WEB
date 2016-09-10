@@ -29,7 +29,7 @@ $('.collection').on('click', '.badge', function(){
 	return false;
 });
 
-$('acao-limpar').on('click', function(){
+$('.acao-limpar').on('click', function(){
 	$('#numero-mesa').val('');
 	$('.badge').remove();
 });
